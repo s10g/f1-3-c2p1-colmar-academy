@@ -1,0 +1,294 @@
+html {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #54414e;
+}
+
+span {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Color palette found at https://coolors.co/c5ebc3-b7c8b5-a790a5-875c74-54414e 
+ * #c5ebc3 - tea green
+ * #b7c8b5 - ash grey
+ * #a790a5 - rose quartz
+ * #875c74 - raspberry glace
+ * #54414e - purple taupe
+ */
+
+
+/* Re-usable CSS */
+.bgimg {
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgimg-information-main {
+    background-image: url("../img/information-main.jpg");
+    min-height: 606px;
+}
+
+.bgimg-banner {
+    background-image: url("../img/banner.jpg");
+    min-height: 816px;
+}
+
+.bgimg-course-software {
+    background-image: url("../img/course-software.jpg");
+    height: 500px;
+}
+
+.icon-login {
+    background-image: url("../img/ic-login.svg");
+    min-height: 10px;
+}
+
+.padding-left-24 {
+    padding-left: 24px;
+}
+
+.padding-right-24 {
+    padding-right: 24px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.zerofy {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sectionpad {
+    padding: 32px 24px;
+}
+
+
+/* Header and menu */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #c5ebc3;
+    font-size: 1.6rem;
+}
+
+header .flex-row {
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+header span:nth-child(2) {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #54414e;
+}
+
+header span:nth-child(3) {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #a790a5;
+}
+
+nav a {
+    margin: auto 8px;
+    color: #54414e;
+    font-family: "Roboto", sans-serif;
+}
+
+nav a:hover {
+    color: #a790a5;
+    transition: color 0.3s 0s;
+    text-decoration: none;
+}
+
+nav a:last-child {
+    padding: 3px;
+    border: 1px solid #54414e;
+    border-radius: 3px;
+}
+
+nav a:last-child:hover {
+    border: 1px solid #a790a5;
+}
+
+
+/* Banner */
+#banner {
+    background-color: #b7c8b5;
+    color: #54414e;
+}
+
+#banner .col-md-5 {
+}
+
+.banner-text {
+    height: 816px;
+    justify-content: space-between;
+}
+
+.banner-text>div {
+    margin: auto auto;
+    padding-left: 40px;
+}
+
+.banner-text h1,
+.banner-text h3, 
+.banner-text a {
+    margin: 36px 0px;
+    text-decoration: none;
+}
+
+
+
+.start-here {
+    display: block;
+    width: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 2rem;
+    background-color: #54414e;
+    border: 2px solid #54414e;
+    color: #b7c8b5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.start-here:hover {
+    background-color: #b7c8b5;
+    color: #54414e;
+}
+
+
+/* Main content: #about */
+.sixty-left-forty-right {
+    background-color: #c5ebc3; 
+}
+
+.sixty-left-forty-right aside {
+    _border: 1px solid black;
+    padding: 16px;
+    margin-left: 24px;
+    min-width: 500px;
+}
+
+.sixty-left-forty-right aside div {
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+
+/* Main content: #start-learning */
+#start-learning {
+    background-color: #b7c8b5;
+}
+
+#start-learning .col-md-12>h1 {
+    text-align: center;
+    color: #54414e;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#start-learning .flex-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.element {
+    background-color: #54414e;
+    color: #c5ebc3;
+    min-width: 565px;
+    _height: 500px;
+    margin: 16px;
+    padding: 16px 16px 24px 16px;
+    flex: 0 1;
+}
+
+.element h3,
+.element span, 
+.element p {
+    margin: 16px 0px;
+}
+
+
+/* Main content: #thesis */
+/* Styled with re-usable class: .sixty-left-forty-right */
+
+#thesis .col-md-12>h1 {
+    text-align: center;
+    color: #54414e;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#thesis div div.row.zerofy.sectionpad div.col-md-5.zerofy.flex-col {
+    justify-content: space-around;
+}
+
+/* Footer */
+footer {
+    background-color: #b7c8b5;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .element {
+        width: 100%;
+        margin: 8px auto;
+    }
+}    
+
+
